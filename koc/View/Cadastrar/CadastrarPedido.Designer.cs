@@ -42,7 +42,8 @@
             this.tbxDataEnPed = new System.Windows.Forms.TextBox();
             this.tbxDataSaPed = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblImg = new System.Windows.Forms.Label();
+            this.lblBarra = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // rtbConfigPed
@@ -52,7 +53,7 @@
             this.rtbConfigPed.Name = "rtbConfigPed";
             this.rtbConfigPed.Size = new System.Drawing.Size(515, 425);
             this.rtbConfigPed.TabIndex = 0;
-            this.rtbConfigPed.Text = "";
+            this.rtbConfigPed.Text = "Placa-Mãe:\nProcessador:\nPlaca de Vídeo:\nFonte:\nMemória RAM:\nArmazenamentos:";
             // 
             // lblConfigPed
             // 
@@ -98,9 +99,9 @@
             this.lblDataSaPed.Location = new System.Drawing.Point(577, 251);
             this.lblDataSaPed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDataSaPed.Name = "lblDataSaPed";
-            this.lblDataSaPed.Size = new System.Drawing.Size(235, 25);
+            this.lblDataSaPed.Size = new System.Drawing.Size(256, 25);
             this.lblDataSaPed.TabIndex = 12;
-            this.lblDataSaPed.Text = "Data de Saída (alterar):";
+            this.lblDataSaPed.Text = "Data de Saída (previsão):";
             // 
             // lblStatusPed
             // 
@@ -108,13 +109,13 @@
             this.lblStatusPed.Location = new System.Drawing.Point(577, 350);
             this.lblStatusPed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatusPed.Name = "lblStatusPed";
-            this.lblStatusPed.Size = new System.Drawing.Size(160, 25);
+            this.lblStatusPed.Size = new System.Drawing.Size(79, 25);
             this.lblStatusPed.TabIndex = 13;
-            this.lblStatusPed.Text = "Status (alterar):";
+            this.lblStatusPed.Text = "Status:";
             // 
             // btnCadastrarPed
             // 
-            this.btnCadastrarPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(19)))), ((int)(((byte)(48)))));
+            this.btnCadastrarPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
             this.btnCadastrarPed.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCadastrarPed.Location = new System.Drawing.Point(1067, 622);
             this.btnCadastrarPed.Margin = new System.Windows.Forms.Padding(4);
@@ -178,7 +179,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(19)))), ((int)(((byte)(48)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(18, 24);
@@ -188,14 +189,23 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "Cadastro de Manutenções";
             // 
-            // label1
+            // lblImg
             // 
-            this.label1.Image = global::koc.Properties.Resources.barra;
-            this.label1.Location = new System.Drawing.Point(-2, -2);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1270, 96);
-            this.label1.TabIndex = 21;
+            this.lblImg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
+            this.lblImg.Image = global::koc.Properties.Resources.mlogo;
+            this.lblImg.Location = new System.Drawing.Point(1180, 9);
+            this.lblImg.Name = "lblImg";
+            this.lblImg.Size = new System.Drawing.Size(72, 72);
+            this.lblImg.TabIndex = 23;
+            // 
+            // lblBarra
+            // 
+            this.lblBarra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
+            this.lblBarra.Location = new System.Drawing.Point(0, -1);
+            this.lblBarra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBarra.Name = "lblBarra";
+            this.lblBarra.Size = new System.Drawing.Size(1269, 88);
+            this.lblBarra.TabIndex = 24;
             // 
             // CadastrarPedido
             // 
@@ -204,6 +214,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.lblImg);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbxDataSaPed);
             this.Controls.Add(this.tbxDataEnPed);
@@ -218,14 +229,13 @@
             this.Controls.Add(this.lblValorPed);
             this.Controls.Add(this.lblConfigPed);
             this.Controls.Add(this.rtbConfigPed);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblBarra);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.Name = "CadastrarPedido";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Manutenções";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,7 +256,8 @@
         private System.Windows.Forms.Label lblCodCliFK;
         private System.Windows.Forms.TextBox tbxDataEnPed;
         private System.Windows.Forms.TextBox tbxDataSaPed;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblImg;
+        private System.Windows.Forms.Label lblBarra;
     }
 }

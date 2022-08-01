@@ -40,7 +40,7 @@
             this.tbxSenhaCli = new System.Windows.Forms.TextBox();
             this.btnCadastrarCli = new System.Windows.Forms.Button();
             this.lblBarra = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblImg = new System.Windows.Forms.Label();
             this.lblLogo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -98,7 +98,7 @@
             // tbxNomeCli
             // 
             this.tbxNomeCli.Location = new System.Drawing.Point(661, 169);
-            this.tbxNomeCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxNomeCli.Margin = new System.Windows.Forms.Padding(4);
             this.tbxNomeCli.Name = "tbxNomeCli";
             this.tbxNomeCli.Size = new System.Drawing.Size(564, 31);
             this.tbxNomeCli.TabIndex = 5;
@@ -106,7 +106,7 @@
             // tbxCpfCli
             // 
             this.tbxCpfCli.Location = new System.Drawing.Point(661, 256);
-            this.tbxCpfCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxCpfCli.Margin = new System.Windows.Forms.Padding(4);
             this.tbxCpfCli.Name = "tbxCpfCli";
             this.tbxCpfCli.Size = new System.Drawing.Size(564, 31);
             this.tbxCpfCli.TabIndex = 6;
@@ -114,7 +114,7 @@
             // tbxFoneCli
             // 
             this.tbxFoneCli.Location = new System.Drawing.Point(661, 343);
-            this.tbxFoneCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxFoneCli.Margin = new System.Windows.Forms.Padding(4);
             this.tbxFoneCli.Name = "tbxFoneCli";
             this.tbxFoneCli.Size = new System.Drawing.Size(564, 31);
             this.tbxFoneCli.TabIndex = 7;
@@ -122,7 +122,7 @@
             // tbxEmailCli
             // 
             this.tbxEmailCli.Location = new System.Drawing.Point(661, 430);
-            this.tbxEmailCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxEmailCli.Margin = new System.Windows.Forms.Padding(4);
             this.tbxEmailCli.Name = "tbxEmailCli";
             this.tbxEmailCli.Size = new System.Drawing.Size(564, 31);
             this.tbxEmailCli.TabIndex = 8;
@@ -130,7 +130,7 @@
             // tbxSenhaCli
             // 
             this.tbxSenhaCli.Location = new System.Drawing.Point(661, 517);
-            this.tbxSenhaCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxSenhaCli.Margin = new System.Windows.Forms.Padding(4);
             this.tbxSenhaCli.Name = "tbxSenhaCli";
             this.tbxSenhaCli.Size = new System.Drawing.Size(564, 31);
             this.tbxSenhaCli.TabIndex = 9;
@@ -140,7 +140,7 @@
             this.btnCadastrarCli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
             this.btnCadastrarCli.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCadastrarCli.Location = new System.Drawing.Point(1077, 576);
-            this.btnCadastrarCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCadastrarCli.Margin = new System.Windows.Forms.Padding(4);
             this.btnCadastrarCli.Name = "btnCadastrarCli";
             this.btnCadastrarCli.Size = new System.Drawing.Size(148, 46);
             this.btnCadastrarCli.TabIndex = 10;
@@ -151,19 +151,19 @@
             // lblBarra
             // 
             this.lblBarra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
-            this.lblBarra.Location = new System.Drawing.Point(-1, -1);
+            this.lblBarra.Location = new System.Drawing.Point(-1, -2);
             this.lblBarra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBarra.Name = "lblBarra";
-            this.lblBarra.Size = new System.Drawing.Size(509, 852);
+            this.lblBarra.Size = new System.Drawing.Size(509, 683);
             this.lblBarra.TabIndex = 11;
             // 
-            // label1
+            // lblImg
             // 
-            this.label1.Image = global::koc.Properties.Resources.cliente;
-            this.label1.Location = new System.Drawing.Point(560, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 78);
-            this.label1.TabIndex = 13;
+            this.lblImg.Image = global::koc.Properties.Resources.cliente;
+            this.lblImg.Location = new System.Drawing.Point(560, 37);
+            this.lblImg.Name = "lblImg";
+            this.lblImg.Size = new System.Drawing.Size(72, 78);
+            this.lblImg.TabIndex = 13;
             // 
             // lblLogo
             // 
@@ -194,7 +194,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblImg);
             this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.lblBarra);
             this.Controls.Add(this.btnCadastrarCli);
@@ -214,7 +214,6 @@
             this.Name = "CadastrarCliente";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Clientes";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,7 +234,7 @@
         private System.Windows.Forms.Button btnCadastrarCli;
         private System.Windows.Forms.Label lblBarra;
         private System.Windows.Forms.Label lblLogo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblImg;
         private System.Windows.Forms.Label label2;
     }
 }

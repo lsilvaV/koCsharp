@@ -130,8 +130,8 @@
             // 
             // btnBuscarPed
             // 
-            this.btnBuscarPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
-            this.btnBuscarPed.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBuscarPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(249)))), ((int)(((byte)(145)))));
+            this.btnBuscarPed.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnBuscarPed.Location = new System.Drawing.Point(543, 323);
             this.btnBuscarPed.Name = "btnBuscarPed";
             this.btnBuscarPed.Size = new System.Drawing.Size(200, 93);
@@ -217,8 +217,8 @@
             // 
             // btnDeletarPed
             // 
-            this.btnDeletarPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
-            this.btnDeletarPed.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDeletarPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(1)))));
+            this.btnDeletarPed.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnDeletarPed.Location = new System.Drawing.Point(543, 541);
             this.btnDeletarPed.Name = "btnDeletarPed";
             this.btnDeletarPed.Size = new System.Drawing.Size(200, 93);
@@ -229,8 +229,8 @@
             // 
             // btnAlterarPed
             // 
-            this.btnAlterarPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(1)))), ((int)(((byte)(33)))));
-            this.btnAlterarPed.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAlterarPed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.btnAlterarPed.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnAlterarPed.Location = new System.Drawing.Point(543, 432);
             this.btnAlterarPed.Name = "btnAlterarPed";
             this.btnAlterarPed.Size = new System.Drawing.Size(200, 93);
@@ -296,8 +296,8 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "VisualizarPedido";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Visualizar Manutenções";
             this.ResumeLayout(false);
             this.PerformLayout();
 

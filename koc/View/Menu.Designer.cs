@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.menuPrincipal = new System.Windows.Forms.MenuStrip();
             this.btnCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCadastrarCliente = new System.Windows.Forms.ToolStripMenuItem();
@@ -140,13 +141,13 @@
             this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.menuPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuPrincipal;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Menu";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "King of Computing";
+            this.Text = "Sistema de Gerenciamento - King of Computing";
             this.menuPrincipal.ResumeLayout(false);
             this.menuPrincipal.PerformLayout();
             this.ResumeLayout(false);
